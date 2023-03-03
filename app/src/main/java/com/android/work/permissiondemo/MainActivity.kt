@@ -13,6 +13,7 @@ class MainActivity : PermissionActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
         PermissionResult.build(this).setCallback(object : PermissionCallback {
             override fun permissionGrantSuccess() {
                 Toast.makeText(this@MainActivity, "权限申请通过", 0).show()
