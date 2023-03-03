@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/shape_fillet_white_20"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/dialog_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="message"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:id="@+id/dialog_message"/>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/shape_fillet_stroke_20"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/cancel_button"
+            android:layout_marginRight="30dp"
+            android:text="取消"/>
+
+        <!--<View
+            android:layout_width="1dp"
+            android:layout_height="34dp"
+            android:background="#000"/>-->
+
+        <TextView
+            android:background="@drawable/shape_fillet_fill_20"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id="@+id/action_button"
+            android:textColor="#fff"
+            android:text="确定"/>
+    </LinearLayout>
+
+   <!-- <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C8000000"
+            android:id="@+id/top"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C8000000"
+            android:id="@+id/bottom"
+            android:layout_below="@+id/btn_ll"/>
+
+        <View
+            android:id="@+id/left"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#C8000000"
+            android:layout_above="@+id/bottom"/>
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#C8000000"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/bottom"/>
+
+        <View
+            android:id="@+id/right"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#C8000000"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/bottom"/>
+    </RelativeLayout>-->
+
+
+</LinearLayout>
